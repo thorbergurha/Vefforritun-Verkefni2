@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
+	<title>Fréttir</title>
+</head>
+<body> 
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
+<header class='haus'>
+	<h2>123Fréttir.is</h2>
+</header>
+	<div class='group'>
+		<section class="col1_2">
+			<h3>{{ frettFyrirsogn }}</h3>
+			<img src= {{ frettMynd }}>
+			<br>
+			<br>
+		</section>
+		<section class="col1_2">
+			<br>
+			<br>
+			<p>{{ frettTexti }}<p>
+			<h6><b><i>{{ netfang }}</i></b></h6>
+			<h6><b><i><a href='/verkefni2-2'>Heim</a></i></b></h6>
+		</section>
+	</div>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css')}}">
+<footer class='fotur'>
+	<h6>123frettir.is - Aðalstræti 1 - 415 Bolungarvík - 123@frettir.is</h6>
+</footer>
+</body>
+</html>
