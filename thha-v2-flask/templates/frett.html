@@ -1,0 +1,23 @@
+{% extends "structure.html" %}
+{% block title %}
+		Fréttir 123
+{% endblock %}
+{% block page_content %}
+{% include "haus.html" ignore missing %}
+	<main class="group">
+		<section class="col1_2">
+            <h1>{{ frett[1] }}</h1>
+			<img src="/static/img/mynd{{frett[0]}}.jpg">
+		</section>
+		<section class="col1_2">
+			<p>
+                {{ frett[2] }}
+            </p>
+            <p>
+                <i>Höfundur: {{ frett[3] }}</i>
+            </p>
+            <p><a href="/verkefni2-2">Heim</a></p>
+        </section>
+	</main>
+	{% include "fotur.html" ignore missing %}
+{% endblock %}
